@@ -1,9 +1,9 @@
 {
-  "name": "Dropbox Sync",
+  "name": "Mikkels Dropbox Sync",
   "version": "dev",
   "slug": "dropbox_sync",
   "description": "Upload your Hass.io backups to Dropbox",
-  "url": "https://github.com/danielwelch/hassio-dropbox-sync",
+  "url": "https://github.com/mgade84/hassio-dropbox-sync",
   "startup": "before",
   "arch": [
     "aarch64",

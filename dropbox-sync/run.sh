@@ -32,8 +32,8 @@ while read -r msg; do
             python3 /keep_last.py "$KEEP_LAST"
         fi
         if [[ "$FILETYPES" ]]; then
-            echo "[Info] filetypes option is set, scanning share directory for files with extensions ${FILETYPES}"
-            find /share -regextype posix-extended -regex "^.*\.(${FILETYPES})" -exec ./dropbox_uploader.sh -s -f /etc/uploader.conf upload {} "$OUTPUT_DIR" \;
+            echo "[Info] filetypes option is set, scanning backup directory for files with extensions ${FILETYPES}"
+            find /backup -regextype posix-extended -regex "^.*\.(${FILETYPES})" -exec ./dropbox_uploader.sh -s -f /etc/uploader.conf upload {} "$OUTPUT_DIR" \;
         fi
     else
         # received undefined command
